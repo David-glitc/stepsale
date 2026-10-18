@@ -1,5 +1,5 @@
 {
-  "name": "roe-launchpad",
+  "name": "stepsale",
   "private": true,
   "type": "module",
   "scripts": {
@@ -23,6 +23,6 @@
   },
   "description": "Create a fully funded ROE token sale with fixed round prices, contribution limits, claims and refunds.",
   "license": "MIT",
-  "repository": "https://github.com/David-glitc/roe-launchpad",
-  "homepage": "https://roe-launchpad-botchain.davidopuene8.workers.dev"
+  "repository": "https://github.com/David-glitc/stepsale",
+  "homepage": "https://stepsale-botchain.davidopuene8.workers.dev"
 }

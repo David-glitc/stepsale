@@ -5,7 +5,7 @@ import {ROEPresale} from "./roepresale.sol";
 
 /// @notice Deploys fully funded instances of the user's original three-round ROE sale.
 /// No sale or token is created until a creator chooses its terms.
-contract ROELaunchpad {
+contract StepsaleLaunchpad {
     address[] public sales;
     mapping(address=>address) public saleToken;
     event SaleCreated(address indexed sale,address indexed token,address indexed creator);

@@ -1,13 +1,13 @@
-# ROE Launchpad
+# Stepsale
 
 **Three rounds. Transparent terms.** Create a fully funded ROE token sale with fixed round prices, contribution limits, claims and refunds.
 
 **Status:** contracts are tested on a BOT Chain mainnet fork; the mainnet deployment is pending.
 
-- Website and app: https://roe-launchpad-botchain.davidopuene8.workers.dev (app at [`/app/`](https://roe-launchpad-botchain.davidopuene8.workers.dev/app/))
+- Website and app: https://stepsale-botchain.davidopuene8.workers.dev (app at [`/app/`](https://stepsale-botchain.davidopuene8.workers.dev/app/))
 - Network: BOT Chain mainnet, chain ID 677 · [BOT Chain](https://www.botchain.ai/) · [BOTScan](https://scan.botchain.ai/)
 
-![ROE Launchpad landing page](docs/roe-launchpad-landing-1280.png)
+![Stepsale landing page](docs/stepsale-landing-1280.png)
 
 ## How it works
 
@@ -26,7 +26,7 @@
 
 | Contract | BOT Chain mainnet |
 |---|---|
-| `ROELaunchpad` | Pending mainnet deployment |
+| `StepsaleLaunchpad` | Pending mainnet deployment |
 
 BOT Chain infrastructure used: USDT `0xaBabc7Ddc03e501d190C676BF3d92ef0e6e87a3C`, WBOT `0xD5452816194a3784dBa983426cCe7c122F4abd30`, BDEX router `0x07032d47A1b9f8460cBeE9dC17c1d3E438693929`, BDEX QuoterV2 `0x034A705b36067cff99ABf5C662Be881cBd8d0176`.
 
@@ -37,15 +37,15 @@ Source: [`contracts/src`](contracts/src). Tests: [`contracts/test`](contracts/te
 Requires Node 20+, [Foundry](https://getfoundry.sh) and Python 3.
 
 ```bash
-git clone --recursive https://github.com/David-glitc/roe-launchpad.git
-cd roe-launchpad
+git clone --recursive https://github.com/David-glitc/stepsale.git
+cd stepsale
 npm ci
 npm test              # forge test
-npm run build         # landing page + app into dist/roe-launchpad
+npm run build         # landing page + app into dist/stepsale
 npm run preview       # http://127.0.0.1:8771
 ```
 
-`npm run build` writes `dist/roe-launchpad/index.html` (landing page), `dist/roe-launchpad/app/` (the dApp) and a Cloudflare Workers bundle under `sites/`.
+`npm run build` writes `dist/stepsale/index.html` (landing page), `dist/stepsale/app/` (the dApp) and a Cloudflare Workers bundle under `sites/`.
 
 ### Wallets
 
