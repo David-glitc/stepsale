@@ -1,5 +1,5 @@
 export default {
- slug:'stepsale',name:'Stepsale',repo:'stepsale',contract:'StepsaleLaunchpad',color:'#d5c5ff',eyebrow:'TOKEN LAUNCHPAD',symbol:'↗',
+ slug:'stepsale',vercel:'stepsale',assets:['BOT'],name:'Stepsale',repo:'stepsale',contract:'StepsaleLaunchpad',color:'#d5c5ff',eyebrow:'TOKEN LAUNCHPAD',symbol:'↗',
  line:'Three rounds. Transparent terms.',
  description:'Create a fully funded ROE token sale with fixed round prices, contribution limits, claims and refunds.',
  abis:['StepsaleLaunchpad','ROEPresale'],
