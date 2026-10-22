@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@500;600&family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap');
+/* Stepsale: a clear term sheet. Cool white, deep blue, soft elevation; steps read as a rising timeline. */
+:root{--scheme:light;--bg:#F5F6FA;--surface:#FFFFFF;--surface-2:#ECEEF6;--input-bg:#FFFFFF;--tile:#ECEEF6;
+ --ink:#10142E;--ink-2:#4B5070;--line:#DCE0EC;--line-strong:#868CA6;
+ --accent:#2438C8;--accent-hover:#1B2CA3;--accent-ink:#FFFFFF;--accent-text:#2438C8;--link:#2438C8;--focus:#0B7F57;
+ --danger:#B42318;--danger-bg:#FDECEA;--danger-text:#A21C12;--scrim:rgba(16,20,46,.45);
+ --radius-sm:8px;--radius-md:12px;--radius-lg:16px;--radius-btn:10px;--radius-pill:999px;--border-w:1px;
+ --shadow-1:0 1px 2px rgba(16,20,46,.06),0 8px 24px rgba(16,20,46,.06);--shadow-2:0 24px 60px rgba(16,20,46,.18);--shadow-btn:0 1px 2px rgba(16,20,46,.08);
+ --font-display:'Sora',system-ui,sans-serif;--font-body:'Manrope',system-ui,sans-serif;--font-label:'Manrope',system-ui,sans-serif;--font-mono:'IBM Plex Mono',ui-monospace,monospace;
+ --display-weight:600;--display-tracking:-0.03em;--display-case:none;--label-tracking:.12em}
+/* Timeline steps rising left to right; quiet cards; blue reserved for actions and data. */
+.steps{position:relative;align-items:end}
+.steps li{position:relative}
+.steps li:nth-child(1){margin-top:48px}.steps li:nth-child(2){margin-top:24px}
+.steps li:before{display:inline-grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--accent);color:var(--accent-ink);font-size:.9rem}
+.features{gap:16px}
+.features div{border-left:0;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-md);padding:20px;box-shadow:var(--shadow-1)}
+.facts{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-lg);padding:4px 24px;box-shadow:var(--shadow-1)}
+.cta-band{background:var(--ink);border-color:var(--ink)}
+.cta-band h2,.cta-band p{color:#F5F6FA}
+.cta-band a.button.primary{background:#FFFFFF;color:var(--ink);border-color:#FFFFFF}
+.cta-band a.button.primary:hover{background:var(--surface-2);border-color:var(--surface-2)}
+@media(max-width:860px){.steps li:nth-child(1),.steps li:nth-child(2){margin-top:0}}
