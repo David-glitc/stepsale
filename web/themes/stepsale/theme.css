@@ -1,23 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@500;600&family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap');
-/* Stepsale: a clear term sheet. Cool white, deep blue, soft elevation; steps read as a rising timeline. */
-:root{--scheme:light;--bg:#F5F6FA;--surface:#FFFFFF;--surface-2:#ECEEF6;--input-bg:#FFFFFF;--tile:#ECEEF6;
- --ink:#10142E;--ink-2:#4B5070;--line:#DCE0EC;--line-strong:#868CA6;
- --accent:#2438C8;--accent-hover:#1B2CA3;--accent-ink:#FFFFFF;--accent-text:#2438C8;--link:#2438C8;--focus:#0B7F57;
- --danger:#B42318;--danger-bg:#FDECEA;--danger-text:#A21C12;--scrim:rgba(16,20,46,.45);
- --radius-sm:8px;--radius-md:12px;--radius-lg:16px;--radius-btn:10px;--radius-pill:999px;--border-w:1px;
- --shadow-1:0 1px 2px rgba(16,20,46,.06),0 8px 24px rgba(16,20,46,.06);--shadow-2:0 24px 60px rgba(16,20,46,.18);--shadow-btn:0 1px 2px rgba(16,20,46,.08);
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap');
+/* Stepsale: a launch at midnight. Deep navy, electric blue light rising, mint confirmations, clean term-sheet cards. */
+:root{--scheme:dark;--bg:#070B1C;--surface:#0E142D;--surface-2:#151C3B;--input-bg:#050816;--tile:#151C3B;
+ --ink:#EEF1FF;--ink-2:#A4ABD1;--line:#212950;--line-strong:#5B6497;
+ --accent:#5B7CFF;--accent-hover:#7A95FF;--accent-ink:#050A1F;--accent-text:#8DA2FF;--link:#9BAEFF;--focus:#3DDC97;
+ --danger:#FF7A6E;--danger-bg:#2C1220;--danger-text:#FF9E95;--scrim:rgba(3,5,14,.75);
+ --radius-sm:8px;--radius-md:12px;--radius-lg:18px;--radius-btn:12px;--radius-pill:999px;--border-w:1px;
+ --shadow-1:0 1px 0 rgba(255,255,255,.04) inset,0 18px 40px rgba(0,0,0,.35);--shadow-2:0 30px 70px rgba(0,0,0,.6);--shadow-btn:0 8px 24px rgba(91,124,255,.25);
  --font-display:'Sora',system-ui,sans-serif;--font-body:'Manrope',system-ui,sans-serif;--font-label:'Manrope',system-ui,sans-serif;--font-mono:'IBM Plex Mono',ui-monospace,monospace;
- --display-weight:600;--display-tracking:-0.03em;--display-case:none;--label-tracking:.12em}
-/* Timeline steps rising left to right; quiet cards; blue reserved for actions and data. */
-.steps{position:relative;align-items:end}
-.steps li{position:relative}
-.steps li:nth-child(1){margin-top:48px}.steps li:nth-child(2){margin-top:24px}
-.steps li:before{display:inline-grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--accent);color:var(--accent-ink);font-size:.9rem}
+ --display-weight:600;--display-tracking:-0.035em;--display-case:none;--label-tracking:.14em;
+ --hero-bg:radial-gradient(60% 60% at 75% 30%,rgba(91,124,255,.38),transparent 70%),radial-gradient(35% 40% at 92% 85%,rgba(61,220,151,.18),transparent 70%),radial-gradient(45% 50% at 10% 15%,rgba(91,124,255,.14),transparent 70%),var(--bg);
+ --hero-pattern:linear-gradient(rgba(238,241,255,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(238,241,255,.07) 1px,transparent 1px);--hero-pattern-size:40px 40px;--hero-pattern-opacity:1;
+ --chip-bg:rgba(14,20,45,.8);--live:#3DDC97;--live-ring:rgba(61,220,151,.25);--art-glow:radial-gradient(circle,rgba(91,124,255,.7),rgba(61,220,151,.22) 55%,transparent 72%);--ticker-bg:#0E142D}
+/* Rising timeline steps, glassless cards on navy, blue reserved for actions and data. */
+.steps{align-items:end}
+.steps li:nth-child(1){margin-top:56px}.steps li:nth-child(2){margin-top:28px}
+.steps li:before{display:inline-grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--accent);color:var(--accent-ink);font-size:.9rem;box-shadow:0 0 24px rgba(91,124,255,.5)}
 .features{gap:16px}
 .features div{border-left:0;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-md);padding:20px;box-shadow:var(--shadow-1)}
-.facts{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-lg);padding:4px 24px;box-shadow:var(--shadow-1)}
-.cta-band{background:var(--ink);border-color:var(--ink)}
-.cta-band h2,.cta-band p{color:#F5F6FA}
-.cta-band a.button.primary{background:#FFFFFF;color:var(--ink);border-color:#FFFFFF}
-.cta-band a.button.primary:hover{background:var(--surface-2);border-color:var(--surface-2)}
+.facts{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-lg);padding:4px 24px}
+.cta-band{background:radial-gradient(70% 130% at 85% 0%,rgba(91,124,255,.35),transparent 60%),var(--surface);border-color:var(--line-strong)}
 @media(max-width:860px){.steps li:nth-child(1),.steps li:nth-child(2){margin-top:0}}
