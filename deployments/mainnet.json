@@ -1,0 +1,42 @@
+{
+  "chainId": 677,
+  "network": "mainnet",
+  "deployer": "0x766d0d810eCF822e02df47CDb5A389777f291895",
+  "local": false,
+  "contracts": {
+    "StepsaleLaunchpad": "0x962d42f1cd3868d1cdc31b4ec29299730e1d5d21"
+  },
+  "actions": {
+    "deploy:StepsaleLaunchpad": {
+      "hash": "0x37dfecb7150190cab630ca7c6e7f41961cd5ebd4967859ea7f4e96cfdfa4200c",
+      "receipt": {
+        "transactionHash": "0x37dfecb7150190cab630ca7c6e7f41961cd5ebd4967859ea7f4e96cfdfa4200c",
+        "contractAddress": "0x962d42f1cd3868d1cdc31b4ec29299730e1d5d21",
+        "blockNumber": "27571965",
+        "gasUsed": "2823126",
+        "gasPrice": "20000000000"
+      }
+    }
+  },
+  "gasSpentWei": "284775900000000000",
+  "ready": true,
+  "infrastructure": {
+    "USDT": "0xaBabc7Ddc03e501d190C676BF3d92ef0e6e87a3C",
+    "WBOT": "0xD5452816194a3784dBa983426cCe7c122F4abd30",
+    "router": "0x07032d47A1b9f8460cBeE9dC17c1d3E438693929",
+    "quoter": "0x034A705b36067cff99ABf5C662Be881cBd8d0176",
+    "fee": 3000
+  },
+  "launched": {
+    "stepsale": "2026-10-22T10:03:22.079Z"
+  },
+  "sourceHashes": {
+    "StepsaleLaunchpad": "0x54d2eea4fd8734cad0063b6a37f6485ef0832bbd829c01448bfb07cc14cf93eb"
+  },
+  "records": {
+    "hedgerowReferenceBasket": {
+      "vault": "0x94B8d2f320b4E96Fb3FA5c040E8F272B18fC31A9",
+      "tx": "0x2c24e6e1a4f01297f0ea0106be58b14c75698f0625fd45597887c83316707e21"
+    }
+  }
+}
