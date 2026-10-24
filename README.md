@@ -6,6 +6,7 @@
 
 - Website and app: https://stepsale.vercel.app (app at [`/app/`](https://stepsale.vercel.app/app/))
 - Network: BOT Chain mainnet, chain ID 677 · [BOT Chain](https://www.botchain.ai/) · [BOTScan](https://scan.botchain.ai/)
+- X: [@Stepsale_fi](https://x.com/Stepsale_fi)
 
 ![Stepsale landing page](docs/stepsale-landing-1280.png)
 

@@ -250,6 +250,32 @@ table.board{width:100%;border-collapse:collapse;font-size:.88rem}
 .grid button[aria-pressed=true]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
 .grid button[aria-pressed=true] small{color:var(--accent-ink)}
 .grid small{font-size:.68rem;color:var(--ink-2)}
+/* Bounty wall (Showproof): the composer spans the page, bounties are cards on a wall. */
+@media(min-width:861px){.workspace[data-layout=wall] #controls form{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0 16px;align-items:end}.workspace[data-layout=wall] #controls .f.wide{grid-column:span 2}.workspace[data-layout=wall] #controls .f.full{grid-column:1/-1}.workspace[data-layout=wall] #controls form button[type=submit]{grid-column:1/-1;justify-self:start;width:auto;min-width:220px}}
+.wall{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,280px),1fr));gap:22px}
+.shot{display:flex;flex-direction:column;padding:12px 12px 18px;background:var(--surface-2);border:1px solid var(--line);border-radius:var(--radius-md);box-shadow:var(--shadow-1)}
+.shot-frame{position:relative;display:grid;place-items:center;aspect-ratio:4/3;margin-bottom:14px;border-radius:var(--radius-sm);background:var(--hero-bg);overflow:hidden}
+.shot-frame .amount{font-size:clamp(1.6rem,4vw,2.2rem)}
+.shot-frame .badge{position:absolute;top:10px;left:10px}
+.shot h3{font-size:1.15rem;margin:0 0 6px;overflow-wrap:anywhere}
+.shot p{font-size:.88rem;margin:0 0 10px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.shot details{padding:10px 0}
+/* Sale calendar (Stepsale): round timeline and raise meter. */
+.sales{display:grid;gap:18px}
+.sale{padding:22px;background:var(--surface-2);border:1px solid var(--line);border-radius:var(--radius-md)}
+.steps-track{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;list-style:none;padding:0;margin:16px 0}
+.steps-track li{padding:10px 12px;border:1px solid var(--line);border-radius:var(--radius-sm);font-size:.78rem;color:var(--ink-2)}
+.steps-track li strong{display:block;font-family:var(--font-mono);font-size:1.05rem;color:var(--ink)}
+.steps-track li.now{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent);color:var(--ink)}
+.steps-track li.done{opacity:.6}
+.meter .cap{position:absolute;top:-4px;bottom:-4px;width:2px;background:var(--focus)}
+/* Deal ticket (Tradelock): segmented mode switch. */
+.seg{display:grid;grid-template-columns:1fr 1fr;margin:4px 0 8px;border:var(--border-w) solid var(--line-strong);border-radius:var(--radius-btn);overflow:hidden}
+.seg input{position:absolute;opacity:0;width:1px;height:1px}
+.seg label{margin:0;display:flex;align-items:center;justify-content:center;min-height:44px;cursor:pointer;font-weight:600;color:var(--ink-2)}
+.seg input:checked+label{background:var(--accent);color:var(--accent-ink)}
+.seg input:focus-visible+label{outline:3px solid var(--focus);outline-offset:-3px}
+.ticket:has(#mode-nft:checked) [data-form=nft-offer],.ticket:not(:has(#mode-nft:checked)) [data-form=nft-swap]{display:none}
 .contracts-panel{margin-top:48px;padding-top:32px;border-top:var(--border-w) solid var(--line)}
 .contracts-panel h2{font-size:1.2rem;margin-bottom:6px}
 .contracts-panel .contracts{grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr))}
